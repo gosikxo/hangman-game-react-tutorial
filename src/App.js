@@ -21,7 +21,7 @@ function App () {
         <Figure />
       </div>
       <WrongLetters />
-      <Word />
+      <Word selectedWord={selectedWord} correctLetters={correctLetters}/>
     </>
   )
 }

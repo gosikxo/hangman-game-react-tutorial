@@ -1,6 +1,7 @@
 import React from 'react'
 
-export const Word = ([selectedWord, correctLetters]) => {
+export const Word = ({ selectedWord, correctLetters }) => {
+
     return (
         <div className="word">
             {selectedWord.split('').map((letter, i) => {
