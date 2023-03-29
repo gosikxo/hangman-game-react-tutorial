@@ -20,8 +20,8 @@ function App () {
       <div className='game-container'>
         <Figure />
       </div>
-      <WrongLetters />
-      <Word selectedWord={selectedWord} correctLetters={correctLetters}/>
+      <WrongLetters wrongLetters={wrongLetters} />
+      <Word selectedWord={selectedWord} correctLetters={correctLetters} />
     </>
   )
 }
