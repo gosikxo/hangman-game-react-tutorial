@@ -1,7 +1,15 @@
 import React from 'react'
 
-export const Word = () => {
+export const Word = ([selectedWord, correctLetters]) => {
     return (
-        <div class="word" id="word"></div>
+        <div className="word">
+            {selectedWord.split('').map((letter, i) => {
+                return (
+                    <span className="letter" key={i}>
+                        {correctLetters.includes(letter) ? letter : ''}
+                    </span>
+                )
+            })}
+        </div>
     )
 }
