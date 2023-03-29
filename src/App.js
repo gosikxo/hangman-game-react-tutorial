@@ -1,10 +1,19 @@
 import './App.css';
+import { Figure } from './components/Figure';
+import { Header } from './components/Header';
+import { Word } from './components/Word';
+import WrongLetters from './components/WrongLetters';
 
 function App () {
   return (
-    <div className="App">
-
-    </div>
+    <>
+      <Header />
+      <div className='game-container'>
+        <Figure />
+      </div>
+      <WrongLetters />
+      <Word />
+    </>
   );
 }
 
